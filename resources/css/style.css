@@ -10,5 +10,56 @@
   padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.hf-tab {
+  color: rgba(238, 110, 115, 0.7);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-transition: color 0.28s ease, background-color 0.28s ease;
+  transition: color 0.28s ease, background-color 0.28s ease;
+  cursor: pointer;
+}
+
+.hf-tab:hover {
+  background-color: rgba(238, 110, 115, 0);
+}
+
+.hf-nav {
+  background-color: rgba(238, 110, 115, 0);
+  box-shadow: none;
+}
+
+.hf-title {
+  color: rgba(95, 151, 50, 1);
+}
+
+a:hover text {
+  border-bottom: 1px solid currentColor;
+}
+
+.nav-vl {
+  margin-top: 25px;
+  border-left: 1px solid green;
+  height: 25px;
+}
+
+.dropdown-trigger {
+  color: rgba(238, 110, 115, 0.7);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-transition: color 0.28s ease, background-color 0.28s ease;
+  transition: color 0.28s ease, background-color 0.28s ease;
+  cursor: pointer;
+}
+
+.dropdown-trigger:hover {
+  background-color: rgba(238, 110, 115, 0);
 }
