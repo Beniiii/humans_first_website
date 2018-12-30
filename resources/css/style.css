@@ -17,6 +17,11 @@
   background-color: rgba(255, 253, 248, 100);
 }
 
+.logo {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -83,4 +88,12 @@ a:hover text {
   background-color: rgba(252, 229, 155, 100);
   font-size: 12px;
   padding: 8px;
+}
+.container-picutre-bottom {
+  widows: 100%;
+  padding: 0px;
+}
+
+.container-impressum {
+  width: 100%;
 }
