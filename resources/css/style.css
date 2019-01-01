@@ -6,6 +6,15 @@
  * Made By MaterializeCSS.com
  */
 
+.home-image {
+  background-size: cover;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .icon-block {
   padding: 0 15px;
 }
@@ -18,7 +27,7 @@
 }
 
 .logo {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 10px;
 }
 
@@ -49,6 +58,7 @@
 .hf-title {
   color: rgba(95, 151, 50, 1);
   margin-left: 10px;
+
   font-size: 30px;
 }
 
