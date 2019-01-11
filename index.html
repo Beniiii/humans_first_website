@@ -40,10 +40,9 @@
     <div class="navbar-fixed">
       <nav class="hf-nav">
         <div class="nav-wrapper">
-          <a class="hf-title" href="#">Humans First</a>
-          <a class="logo">
-          <img src="resources/images/logo.png" alt="arch_bridge" width="30" height="30">
-          </a>
+          <a class="hf-title" href="#">Humans First 
+            <img class="logo-icon"src="resources/images/logo.png" alt="arch_bridge" ></a>
+        
           <ul class="right hide-on-med-and-down">
             <li>
               <a class="hf-tab" href="shop.html"><text>Abos & Preise</text></a>
@@ -65,6 +64,7 @@
               </li>
           </ul>
 
+          <!-- Dropdown Structure NavBar -->
           <ul id="nav-mobile" class="sidenav">
             <li><a href="#">Navbar Link</a></li>
           </ul>
@@ -74,30 +74,20 @@
         </div>
       </nav>
     </div>
+
+<!--   Title   -->
     <div class="section no-pad-bot" id="index-banner">
       <div class="container">
         <br /><br />
-        <h1 class="header center orange-text">Starter Template</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">
-            A modern responsive front-end framework based on Material Design
-          </h5>
-        </div>
-        <div class="row center">
-          <a
-            href="shop.html"
-            id="download-button"
-            class="btn-large waves-effect waves-light orange"
-            >Get Started</a
-          >
-        </div>
+        <div class="header-text">PRANIC HEALING NACH MASTER CHOA KOK SUI</div>
         <br /><br />
       </div>
     </div>
 
+
+    <!--   Parrallex Structure   -->
     <div class="container">
       <div class="section">
-        <!--   Parrallex Structure   -->
         <div class="row">
           <div class="col s12 m4">
             <div class="icon-block">
@@ -155,10 +145,15 @@
      <!-- Picture Structure -->
     <div class="container-picutre-bottom">
       <div class="section">
-        <div class="row">
+        <div class="row no-gutters">
           <div class="col s12 m4">
               <img src="resources/images/arch_bridge.jpg" alt="arch_bridge" width="410" height="295">
-              </div>
+              <div class="inner-text-image">
+                  <p class="light">
+                      Abos & Preise
+                    </p>
+            </div>
+            </div>
           <div class="col s12 m4">
               <img src="resources/images/hands_together.jpg" alt="hands_together" width="410" height="295">
               </div>
@@ -200,14 +195,17 @@
           </div>
           <div class="col l4 s12">
             <h5 class="footer-text">Newsletter</h5>
-            <p class="footer-text"> 
-              Dies ist der News-Letter. Bei Anmeldung erhalten sie einmal pro Monat
-              ein Mail mit Infos rund um Pranic Healing.
-            </p>
+            <ul>
+            <li><a class="footer-text">Dies ist der News-Letter. Bei Anmeldung erhalten sie einmal pro Monat
+            ein Mail mit Infos rund um Pranic Healing.
+            </a></lil>
+            <li><input placeholder="E-Mail Adresse" class="validate"></li>
+            <li class="news-button"><a href="shop.html" class="waves-effect waves-light btn">Submits</a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="footer-copyright-text">
+      <div class="footer-copyright">
         <div class="container-impressum" >
           <div class="col l1 s12">
           <a class="footer-copyright-text">
