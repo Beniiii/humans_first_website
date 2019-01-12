@@ -107,6 +107,53 @@ a:hover text {
   margin-left: -10px;
 }
 
+/*Picture Structure*/
+
+.container-picutre-bottom {
+  widows: 100%;
+  padding: 0px;
+}
+
+.section-picture-structure {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.row-picture-structure {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  max-width: auto;
+  max-height: auto;
+}
+
+.image-container {
+  min-width: 421px;
+  min-height: 370px;
+  max-width: auto;
+  max-height: auto;
+
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-sizing: inherit;
+}
+
+.inner-text-image {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  align-content: center;
+}
+
+.image-text-property {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  border-bottom: none;
+}
+
+/*Footer Structure*/
+
 .page-footer-color {
   background-color: rgba(254, 245, 215, 100);
 }
@@ -125,16 +172,11 @@ a:hover text {
   color: rgba(70, 73, 72, 100);
   background-color: rgba(252, 229, 155, 100);
   font-size: 12px;
-  padding: 8px;
+  padding: 12px;
 }
 
 .news-button {
   margin-top: 10px;
-}
-
-.container-picutre-bottom {
-  widows: 100%;
-  padding: 0px;
 }
 
 .container-impressum {
@@ -156,11 +198,9 @@ a:hover text {
 nav {
   z-index: 3;
 }
-
 header {
   z-index: 2;
 }
-
 #nav-bg {
   z-index: 1;
 }
@@ -168,16 +208,18 @@ header {
 body {
   background: #eee;
 }
-
 nav {
   position: fixed;
   top: 0;
 }
+<<<<<<< HEAD
 
 nav a {
   color: rgba(70, 73, 72, 1);
 }
 
+=======
+>>>>>>> 2acf66f37deb76c29fc4972ab660c0214cb467f9
 header {
   position: relative;
   background-color: black;
@@ -186,23 +228,31 @@ header {
   background-size: cover;
   background-position: center;
 }
+
 header:before {
-  content: ' ';
+  position: relative;
+  background-color: black;
+  padding: 1em;
+  height: 100vh;
+  content: " ";
   display: block;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   padding-top: 56.25%;
   background-image: url('/resources/images/homeImg_freedom.jpg');
+=======
+  background-image: url("https://i.giphy.com/vYTo95h4e2j6M.gif");
+>>>>>>> 2acf66f37deb76c29fc4972ab660c0214cb467f9
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-position: 65% 50%;
   opacity: 0.4;
 }
-
 #nav-bg {
   background: rgba(255, 253, 248, 100);
   position: fixed;
@@ -212,6 +262,7 @@ header:before {
   box-shadow: none;
 }
 
+<<<<<<< HEAD
 header h1 {
   color: rgba(95, 151, 50, 1);
   font-size: 48px;
@@ -224,6 +275,8 @@ header p {
   font-weight: 200;
 }
 
+=======
+>>>>>>> 2acf66f37deb76c29fc4972ab660c0214cb467f9
 #about {
   background: #eee;
   height: 70em;
