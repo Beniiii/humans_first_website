@@ -38,14 +38,19 @@
 
 .hf-title {
   color: rgba(95, 151, 50, 1);
-  margin-left: 10px;
   font-size: 30px;
+  margin-left: 10px;
+}
+
+.hf-logo-icon {
+  margin-left: 10px;
+  margin-bottom: -20px;
 }
 
 .logo-icon {
-  align-content: center;
-  margin-left: 12px;
-  margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -23.5px;
 }
 
 .sticky {
@@ -58,6 +63,7 @@
   color: rgba(70, 73, 72, 1);
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 20px;
   -webkit-transition: color 0.28s ease, background-color 0.28s ease;
   transition: color 0.28s ease, background-color 0.28s ease;
   cursor: pointer;
@@ -90,10 +96,15 @@ a:hover text {
   -webkit-transition: color 0.28s ease, background-color 0.28s ease;
   transition: color 0.28s ease, background-color 0.28s ease;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .dropdown-trigger:hover {
   background-color: rgba(238, 110, 115, 0);
+}
+
+.dropdown-arrow {
+  margin-left: -10px;
 }
 
 .page-footer-color {
@@ -133,4 +144,69 @@ a:hover text {
 .row-no-gutters {
   margin-right: 0;
   margin-left: 0;
+}
+
+.nav-wrapper.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+/*NAVBAR NEU*/
+
+nav {
+  z-index: 3;
+}
+header {
+  z-index: 2;
+}
+#nav-bg {
+  z-index: 1;
+}
+
+body {
+  background: #eee;
+}
+nav {
+  position: fixed;
+  top: 0;
+}
+header {
+  position: relative;
+  background-color: black;
+  padding: 1em;
+  height: 100vh;
+}
+
+header::before {
+  position: relative;
+  background-color: black;
+  padding: 1em;
+  height: 100vh;
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.giphy.com/vYTo95h4e2j6M.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 65% 50%;
+  opacity: 0.4;
+}
+#nav-bg {
+  background: #ee6e73;
+  position: fixed;
+  height: 65px;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+#about {
+  background: #eee;
+  height: 70em;
+  padding: 5em 0;
 }
