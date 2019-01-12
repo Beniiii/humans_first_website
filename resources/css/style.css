@@ -107,6 +107,25 @@ a:hover text {
   margin-left: -10px;
 }
 
+/*Picture Structure*/
+
+.container-picutre-bottom {
+  widows: 100%;
+  padding: 0px;
+}
+
+.section-picture-structure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.row-picture-structure {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .page-footer-color {
   background-color: rgba(254, 245, 215, 100);
 }
@@ -130,11 +149,6 @@ a:hover text {
 
 .news-button {
   margin-top: 10px;
-}
-
-.container-picutre-bottom {
-  widows: 100%;
-  padding: 0px;
 }
 
 .container-impressum {
@@ -182,14 +196,14 @@ header::before {
   background-color: black;
   padding: 1em;
   height: 100vh;
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://i.giphy.com/vYTo95h4e2j6M.gif');
+  background-image: url("https://i.giphy.com/vYTo95h4e2j6M.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 65% 50%;
