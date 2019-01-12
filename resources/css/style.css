@@ -50,7 +50,7 @@
 .logo-icon {
   position: absolute;
   top: 50%;
-  margin-top: -23.5px;
+  margin-top: 8px;
 }
 
 .sticky {
@@ -174,11 +174,17 @@ nav {
   top: 0;
 }
 
+nav a {
+  color: rgba(70, 73, 72, 1);
+}
+
 header {
   position: relative;
   background-color: black;
   padding: 1em;
   height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 header:before {
   content: ' ';
@@ -188,28 +194,28 @@ header:before {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://i.giphy.com/vYTo95h4e2j6M.gif');
+  padding-top: 56.25%;
+  background-image: url('/resources/images/homeImg_freedom.jpg');
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-position: 65% 50%;
   opacity: 0.4;
 }
 
 #nav-bg {
-  background: #ee6e73;
+  background: rgba(255, 253, 248, 100);
   position: fixed;
   height: 65px;
   width: 100%;
   top: 0;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: none;
 }
 
 header h1 {
-  font-size: 4em;
-  text-transform: uppercase;
+  color: rgba(95, 151, 50, 1);
+  font-size: 48px;
   text-align: center;
-  font-weight: 800;
   padding-top: 30vh;
 }
 header p {

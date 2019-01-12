@@ -1,41 +1,135 @@
 <!DOCTYPE html>
 <html lang="en" class="html">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1.0"
-    />
-    <title>Humans First - Pranic Healing</title>
-
-    <!-- CSS  -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="resources/css/materialize.css"
-      type="text/css"
-      rel="stylesheet"
-      media="screen,projection"
-    />
-    <link
-      href="resources/css/style.css"
-      type="text/css"
-      rel="stylesheet"
-      media="screen,projection"
-    />
-
-    <script>
-    </script>
-  </head>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1.0"
+        />
+        <title>Humans First - Pranic Healing</title>
+    
+        <!-- CSS  -->
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
+        <link
+          href="resources/css/materialize.css"
+          type="text/css"
+          rel="stylesheet"
+          media="screen,projection"
+        />
+        <link
+          href="resources/css/style.css"
+          type="text/css"
+          rel="stylesheet"
+          media="screen,projection"
+        />
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+        <script src="https://codepen.io/j_holtslander/pen/pLNzQb.js"></script>
+        <script sry="https://codepen.io/j_holtslander/pen/KQrWVy.js"></script>
+        <script src="/resources/js/javascript.js"></script>
+    
+        <script>
+          $(document).ready(function() {
+            // MODAL
+            $('.sidenav').sidenav();
+            $('.fixed-action-btn').floatingActionButton();
+            $('.tooltipped').tooltip();
+          });
+    
+          var header = $('header');
+          var range = 200;
+    
+          $(window).on('scroll', function() {
+            var scrollTop = $(this).scrollTop(),
+              height = header.outerHeight(),
+              offset = height / 1.1,
+              calc = 1 - (scrollTop - offset + range) / range;
+    
+            header.css({ opacity: calc });
+    
+            if (calc > '1') {
+              header.css({ opacity: 1 });
+            } else if (calc < '0') {
+              header.css({ opacity: 0 });
+            }
+          });
+        </script>
+      </head>
   <body class="body-color"> 
     <div>
       <div class="selection">
-      <img class="home-image" src="resources/images/homeImg_freedom.jpg" alt="home-Img">
+      
     </div>
   </div>
-    <!-- NavBar -->
+<!-- NavBar Neu -->
+<nav class="transparent z-depth-0">
+    <div class="nav-wrapper">
+      <div class="row">
+        <div class="col s12">
+          <a
+            href="https://codepen.io/collection/nbBqgY"
+            target="_blank"
+            class="brand-logo"
+            ><img class="logo-icon" src="resources/images/Navbar.png" alt="arch_bridge" width="340" height="47"></a
+          >
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+              <li>
+                <a class="hf-tab" href="shop.html" target="_blank"><text>Abos & Preise</text></a>
+              </li>
+              <li>
+                <a class="hf-tab" href="team.html" target="_blank"><text>Über Uns</text></a>
+              </li>
+              <li>
+                <a class="hf-tab" href="shop.html" target="_blank"><text>Kontakt</text></a>
+              </li>
+              <li><div class="nav-vl" target="_blank"></div></li>
+              <li>
+                <a class="dropdown-trigger" class="nav-dropdown" href="#!" data-target="dropdown1"
+                  ><text>DE</text><i class="material-icons right" class="dropdown-arrow" width="340" height="47">arrow_drop_down</i></a
+                >
+              </li>
+              <li>
+                  <li><a class="hf-tab" href="#"><i class="material-icons" target="_blank">shopping_cart</i></a></li>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a href="https://github.com/dogfalo/materialize/" target="_blank"
+          >Github</a
+        >
+      </li>
+      <li>
+        <a href="https://twitter.com/MaterializeCSS" target="_blank">Twitter</a>
+      </li>
+      <li>
+        <a
+          href="http://next.materializecss.com/getting-started.html"
+          target="_blank"
+          >Docs</a
+        >
+      </li>
+    </ul>
+
+  <header class="" style="background-image: url('resources/images/homeImg_freedom.jpg')">
+      <div class="container">
+        <h1>PRANIC HEALING NACH <br/> MASTER CHOA KOK SUI</h1>
+      </div>
+    </header>
+
+  <div id="nav-bg"></div>
+
+    <!-- NavBar 
     <ul id="dropdown1" class="dropdown-content">
       <li><a href="#!">DE</a></li>
       <li><a href="#!">EN</a></li>
@@ -66,27 +160,10 @@
               </li>
           </ul>
 
-          <!-- Dropdown Structure NavBar -->
-          <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">Navbar Link</a></li>
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"
-            ><i class="material-icons">menu</i></a
-          >
         </div>
       </nav>
     </div>
-
-<!--   Title   -->
-    <div class="section no-pad-bot" id="index-banner">
-      <div class="container">
-        <br /><br />
-        <div class="header-text">PRANIC HEALING NACH MASTER CHOA KOK SUI</div>
-        <br /><br />
-      </div>
-    </div>
-
-
+-->
     <!--   Parrallex Structure   -->
     <div class="container">
       <div class="section">
@@ -218,9 +295,5 @@
       </div>
     </footer>
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="/resources/js/materialize.js"></script>
-    <script src="/resources/js/init.js"></script>
   </body>
 </html>
