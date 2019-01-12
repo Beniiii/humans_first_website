@@ -156,9 +156,11 @@ a:hover text {
 nav {
   z-index: 3;
 }
+
 header {
   z-index: 2;
 }
+
 #nav-bg {
   z-index: 1;
 }
@@ -166,22 +168,19 @@ header {
 body {
   background: #eee;
 }
+
 nav {
   position: fixed;
   top: 0;
 }
+
 header {
   position: relative;
   background-color: black;
   padding: 1em;
   height: 100vh;
 }
-
-header::before {
-  position: relative;
-  background-color: black;
-  padding: 1em;
-  height: 100vh;
+header:before {
   content: ' ';
   display: block;
   position: absolute;
@@ -195,6 +194,7 @@ header::before {
   background-position: 65% 50%;
   opacity: 0.4;
 }
+
 #nav-bg {
   background: #ee6e73;
   position: fixed;
@@ -203,6 +203,19 @@ header::before {
   top: 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  padding-top: 30vh;
+}
+header p {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 200;
 }
 
 #about {

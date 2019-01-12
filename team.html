@@ -25,35 +25,10 @@
       rel="stylesheet"
       media="screen,projection"
     />
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-    <script src="resources/js/javascript.js"></script>
-    <script>
-      $(document).ready(function() {
-        // MODAL
-        $('.sidenav').sidenav();
-        $('.fixed-action-btn').floatingActionButton();
-        $('.tooltipped').tooltip();
-      });
-
-      var header = $('header');
-      var range = 200;
-
-      $(window).on('scroll', function() {
-        var scrollTop = $(this).scrollTop(),
-          height = header.outerHeight(),
-          offset = height / 1.1,
-          calc = 1 - (scrollTop - offset + range) / range;
-
-        header.css({ opacity: calc });
-
-        if (calc > '1') {
-          header.css({ opacity: 1 });
-        } else if (calc < '0') {
-          header.css({ opacity: 0 });
-        }
-      });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+    <script src="https://codepen.io/j_holtslander/pen/pLNzQb.js"></script>
+    <script src="/resources/js/javascript.js"></script>
   </head>
 
   <body>
