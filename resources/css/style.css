@@ -345,8 +345,8 @@ header p {
 .season-desc {
   z-index: 1;
   position: relative;
-  background: #282e34;
-  color: white;
+  background: rgba(255, 253, 248, 100);
+  color: rgba(70, 73, 72, 1);
   font-size: 1.1rem;
   letter-spacing: 2px;
   line-height: 2em;
