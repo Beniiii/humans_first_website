@@ -394,86 +394,13 @@ header p {
 }
 
 /*Image structure*/
-
-.container-is {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container-is > div > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.container-is > .normal {
-  flex: 1 1 33%;
-}
-
-.container-is > .big {
-  flex: 1 1 33%;
-  background-position: center;
-  background-size: cover;
-}
-
-@media only screen and (max-width: 480px) {
-  .container-is {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .container-is > div > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .container-is > .normal {
-    flex: 1 1 33%;
-  }
-
-  .container-is > .big {
-    flex: 1 1 250px;
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-.wrapper-is {
-  position: relative;
-}
-
-.text-is {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 13.5%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 5vw;
-  color: white;
-  font-family: arial;
-}
-
-.img-text-is {
-  display: flex;
-  position: relative;
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-}
-
-/*image structure alt*/
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, calc(33.33vw - 13.33px));
   grid-template-rows: repeat(1, calc(50vh - 13.33px));
   color: #fff;
   font-size: 3vw;
+  text-align: center;
 }
 
 .gallery img {
@@ -531,7 +458,7 @@ header p {
 @media only screen and (max-width: 480px) {
   .gallery {
     display: grid;
-    grid-template-columns: repeat(1, calc(100vw - 13.33px));
+    grid-template-columns: repeat(1, 100vw);
     grid-template-rows: repeat(3, calc(50vh - 13.33px));
     color: #fff;
     font-size: 9vw;
