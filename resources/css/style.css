@@ -6,6 +6,11 @@
  * Made By MaterializeCSS.com
  */
 
+@font-face {
+  font-family: headerFont;
+  src: url(noto_serif.woff);
+}
+
 .home-image {
   background-size: cover;
   position: absolute;
@@ -117,39 +122,42 @@ a:hover text {
 .section-picture-structure {
   padding-top: 0rem;
   padding-bottom: 0rem;
+  height: auto;
+  width: auto;
 }
 
 .row-picture-structure {
   position: relative;
   display: flex;
-  overflow: hidden;
-  max-width: auto;
-  max-height: auto;
+  flex-wrap: wrap;
 }
 
 .image-container {
-  min-width: 421px;
-  min-height: 370px;
-  max-width: auto;
-  max-height: auto;
-
+  min-width: 420px;
+  min-height: 350px;
+  max-width: 100%;
+  max-height: 100%;
   background-size: cover;
   background-position: center;
   overflow: hidden;
   box-sizing: inherit;
 }
 
+.image-container:before {
+  background-color: black;
+}
+
 .inner-text-image {
-  text-align: center;
-  position: relative;
-  top: 50%;
-  align-content: center;
 }
 
 .image-text-property {
   color: rgb(255, 255, 255);
   font-size: 32px;
-  border-bottom: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  text-align: center;
 }
 
 /*Footer Structure*/
@@ -230,7 +238,7 @@ header:before {
   position: relative;
   padding: 1em;
   height: 100vh;
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   left: 0;
@@ -255,9 +263,11 @@ header:before {
 
 header h1 {
   color: rgba(95, 151, 50, 1);
-  font-size: 48px;
+  font-size: 42px;
   text-align: center;
-  padding-top: 30vh;
+  padding-top: 35vh;
+  font-family: headerFont;
+  font-weight: bold;
 }
 header p {
   text-align: center;
