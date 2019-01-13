@@ -53,7 +53,6 @@
 }
 
 .logo-icon {
-  position: absolute;
   top: 50%;
   margin-top: 8px;
 }
@@ -68,7 +67,7 @@
   color: rgba(70, 73, 72, 1);
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 20px;
+  font-size: 18px;
   -webkit-transition: color 0.28s ease, background-color 0.28s ease;
   transition: color 0.28s ease, background-color 0.28s ease;
   cursor: pointer;
@@ -101,7 +100,7 @@ a:hover text {
   -webkit-transition: color 0.28s ease, background-color 0.28s ease;
   transition: color 0.28s ease, background-color 0.28s ease;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .dropdown-trigger:hover {
