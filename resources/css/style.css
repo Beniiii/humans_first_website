@@ -6,10 +6,7 @@
  * Made By MaterializeCSS.com
  */
 
-@font-face {
-  font-family: textFont;
-  src: url(nunito.woff);
-}
+/* Title-Home */
 
 .fade {
   opacity: 1;
@@ -117,51 +114,6 @@ a:hover text {
   margin-left: -10px;
 }
 
-/*Footer Structure*/
-
-.page-footer-color {
-  background-color: rgba(254, 245, 215, 100);
-}
-
-.footer-text {
-  color: rgba(70, 73, 72, 100);
-  font-family: Helvetica, sans-serif;
-  letter-spacing: 2px;
-}
-
-.footer-copyright-text {
-  color: rgba(70, 73, 72, 100);
-  background-color: rgba(252, 229, 155, 100);
-  font-size: 12px;
-  font-family: Helvetica, sans-serif;
-  letter-spacing: 2px;
-}
-
-.footer-copyright {
-  color: rgba(70, 73, 72, 100);
-  background-color: rgba(252, 229, 155, 100);
-  font-size: 12px;
-  padding: 12px;
-}
-
-.validate {
-  font-family: Helvetica, sans-serif;
-  letter-spacing: 2px;
-}
-
-.news-button {
-  margin-top: 10px;
-}
-
-.container-impressum {
-  width: 100%;
-}
-
-.nav-wrapper.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
-}
-
 /*NAVBAR NEU*/
 
 nav {
@@ -199,7 +151,7 @@ header:before {
   position: relative;
   padding: 1em;
   height: 100vh;
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   left: 0;
@@ -246,6 +198,70 @@ header p {
   padding: 5em 0;
 }
 
+.navbar {
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+  box-shadow: none;
+}
+.navbar-default .navbar-brand {
+  margin-top: 10px;
+  color: white;
+}
+.navbar-default .navbar-brand:hover {
+  color: rgba(255, 253, 248, 100);
+  border: 1px solid rgba(255, 253, 248, 100);
+}
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  margin: 10px 5px 5px 5px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:focus {
+  color: rgba(255, 253, 248, 100);
+  border: 1px solid rgba(255, 253, 248, 100);
+}
+.navbar-default .navbar-nav > li > a:visited {
+  color: rgba(255, 253, 248, 100);
+  text-decoration: none;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: rgba(255, 253, 248, 100);
+}
+.navbar-default .navbar-toggle {
+  border-color: rgba(255, 253, 248, 100);
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: rgba(255, 253, 248, 100);
+}
+.navbar-default .navbar-toggle .icon-bar {
+  color: rgba(255, 253, 248, 100);
+  background-color: rgba(255, 253, 248, 100);
+}
+.navbar-default .navbar-collapse.collapse.in ul {
+  background-color: rgba(255, 253, 248, 100);
+}
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+  background-color: rgba(255, 253, 248, 100);
+  transition: background-color 1s ease 0s;
+}
+.navbar.solid .navbar-brand {
+  color: rgba(255, 253, 248, 100);
+  transition: color 1s ease 0s;
+}
+.navbar.solid .navbar-nav > li > a {
+  color: rgba(255, 253, 248, 100);
+  transition: color 1s ease 0s;
+}
+
 /* Parallax Structure */
 
 .parallax-wrapper {
@@ -271,19 +287,19 @@ header p {
 }
 
 .background--spring {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/da/Precincts_of_Watari-jinja_shrine_in_Spring_season_2.JPG');
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/da/Precincts_of_Watari-jinja_shrine_in_Spring_season_2.JPG");
 }
 
 .background--summer {
-  background-image: url('https://images.pexels.com/photos/375152/summer-sun-blooming-season-375152.jpeg?cs=srgb&dl=beautiful-bloom-blossom-375152.jpg&fm=jpg');
+  background-image: url("https://images.pexels.com/photos/375152/summer-sun-blooming-season-375152.jpeg?cs=srgb&dl=beautiful-bloom-blossom-375152.jpg&fm=jpg");
 }
 
 .background--fall {
-  background-image: url('https://images.pexels.com/photos/33060/road-forest-season-autumn.jpg?cs=srgb&dl=autumn-fall-forest-33060.jpg&fm=jpg');
+  background-image: url("https://images.pexels.com/photos/33060/road-forest-season-autumn.jpg?cs=srgb&dl=autumn-fall-forest-33060.jpg&fm=jpg");
 }
 
 .background--winter {
-  background-image: url('https://images.pexels.com/photos/235595/pexels-photo-235595.jpeg?cs=srgb&dl=branches-cold-season-235595.jpg&fm=jpg');
+  background-image: url("https://images.pexels.com/photos/235595/pexels-photo-235595.jpeg?cs=srgb&dl=branches-cold-season-235595.jpg&fm=jpg");
 }
 
 .title {
@@ -385,7 +401,7 @@ header p {
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .gallery div:before {
-  content: '';
+  content: "";
   position: absolute;
   transition: 0.4s ease;
   top: 0;
@@ -485,67 +501,47 @@ header p {
   animation-delay: 2.4s;
 }
 
-/*Navbar neu*/
-.navbar {
-  background-color: transparent;
-  border: none;
-  color: white;
-  z-index: 100;
-  transition: background-color 1s ease 0s;
-  box-shadow: none;
+/*Footer Structure*/
+
+.page-footer-color {
+  background-color: rgba(254, 245, 215, 100);
 }
-.navbar-default .navbar-brand {
+
+.footer-text {
+  color: rgba(70, 73, 72, 100);
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+.footer-copyright-text {
+  color: rgba(70, 73, 72, 100);
+  background-color: rgba(252, 229, 155, 100);
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+.footer-copyright {
+  color: rgba(70, 73, 72, 100);
+  background-color: rgba(252, 229, 155, 100);
+  font-size: 12px;
+  padding: 12px;
+}
+
+.validate {
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+.news-button {
   margin-top: 10px;
-  color: white;
 }
-.navbar-default .navbar-brand:hover {
-  color: rgba(255, 253, 248, 100);
-  border: 1px solid rgba(255, 253, 248, 100);
+
+.container-impressum {
+  width: 100%;
 }
-.navbar-default .navbar-nav > li > a {
-  color: white;
-  margin: 10px 5px 5px 5px;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:active,
-.navbar-default .navbar-nav > li > a:focus {
-  color: rgba(255, 253, 248, 100);
-  border: 1px solid rgba(255, 253, 248, 100);
-}
-.navbar-default .navbar-nav > li > a:visited {
-  color: rgba(255, 253, 248, 100);
-  text-decoration: none;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  background-color: transparent;
-  color: rgba(255, 253, 248, 100);
-}
-.navbar-default .navbar-toggle {
-  border-color: rgba(255, 253, 248, 100);
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: rgba(255, 253, 248, 100);
-}
-.navbar-default .navbar-toggle .icon-bar {
-  color: rgba(255, 253, 248, 100);
-  background-color: rgba(255, 253, 248, 100);
-}
-.navbar-default .navbar-collapse.collapse.in ul {
-  background-color: rgba(255, 253, 248, 100);
-}
-/* Solid class attached on scroll past first section */
-.navbar.solid {
-  background-color: rgba(255, 253, 248, 100);
-  transition: background-color 1s ease 0s;
-}
-.navbar.solid .navbar-brand {
-  color: rgba(255, 253, 248, 100);
-  transition: color 1s ease 0s;
-}
-.navbar.solid .navbar-nav > li > a {
-  color: rgba(255, 253, 248, 100);
-  transition: color 1s ease 0s;
+
+.nav-wrapper.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
