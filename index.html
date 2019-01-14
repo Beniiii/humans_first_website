@@ -28,10 +28,23 @@
     
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://codepen.io/j_holtslander/pen/pLNzQb.js"></script>
         <script src="https://codepen.io/j_holtslander/pen/KQrWVy.js"></script>
         <script src="/resources/js/javascript.js"></script>
-    
+        <script>
+            $(document).ready(function() {
+              // Transition effect for navbar
+              $(window).scroll(function() {
+                // checks if window is scrolled more than 500px, adds/removes solid class
+                if ($(this).scrollTop() > 200) {
+                  $('.navbar').addClass('solid');
+                } else {
+                  $('.navbar').removeClass('solid');
+                }
+              });
+            });
+          </script>
         <script>
           $(document).ready(function() {
             // MODAL
@@ -66,7 +79,7 @@
     </div>
   </div>
 <!-- NavBar Neu -->
-<nav class="transparent z-depth-0">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="nav-wrapper">
       <div class="row">
         <div class="col s12">

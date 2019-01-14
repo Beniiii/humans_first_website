@@ -20,14 +20,41 @@
       media="screen,projection"
     />
     <link
-      href="resources/css/style.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
       type="text/css"
       rel="stylesheet"
       media="screen,projection"
     />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="resources/css/navbar.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Transition effect for navbar
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if ($(this).scrollTop() > 50) {
+            $('.navbar').addClass('solid');
+          } else {
+            $('.navbar').removeClass('solid');
+          }
+        });
+      });
+    </script>
   </head>
 
   <body>
-    <h1>SHOP</h1>
+    <h1>Shop</h1>
   </body>
 </html>
