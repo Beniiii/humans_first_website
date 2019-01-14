@@ -37,14 +37,14 @@
               // Transition effect for navbar
               $(window).scroll(function() {
                 // checks if window is scrolled more than 500px, adds/removes solid class
-                if ($(this).scrollTop() > 200) {
+                if ($(this).scrollTop() > 150) {
                   $('.navbar').addClass('solid');
                 } else {
                   $('.navbar').removeClass('solid');
                 }
               });
             });
-          </script>
+        </script>
         <script>
           $(document).ready(function() {
             // MODAL
@@ -71,6 +71,11 @@
             }
           });
         </script>
+        <script>
+          $(window).scroll(function(){
+            $(".fade").css("opacity", 1 - $(window).scrollTop() / 500);
+          });
+        </script>
       </head>
   <body class="body-color"> 
     <div>
@@ -87,7 +92,7 @@
             href="index.html"
             target="_blank"
             class="brand-logo"
-            ><img class="logo-icon" src="resources/images/Navbar.png" alt="arch_bridge" width="238" height="33"></a
+            ><img class="logo-icon" src="resources/images/titleNavbar.png" alt="arch_bridge" width="238" height="33"></a
           >
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"
             ><i class="material-icons">menu</i></a
@@ -128,7 +133,7 @@
       </li>
     </ul>
 
-  <header style="background-image: url('resources/images/homeImg_freedom.jpg')">
+  <header class="fade" style="background-image: url('resources/images/homeImg_freedom.jpg')">
       <div class="container">
         <h1>PRANIC HEALING<br/></h1>
         <p>Nach Master Choa Kok Sui</p>
