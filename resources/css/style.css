@@ -7,11 +7,6 @@
  */
 
 @font-face {
-  font-family: headerFont;
-  src: url(noto_serif.woff);
-}
-
-@font-face {
   font-family: textFont;
   src: url(nunito.woff);
 }
@@ -116,55 +111,6 @@ a:hover text {
   margin-left: -10px;
 }
 
-/*Picture Structure*/
-
-.container-picutre-bottom {
-  widows: 100%;
-  padding: 0px;
-}
-
-.section-picture-structure {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  height: auto;
-  width: auto;
-}
-
-.row-picture-structure {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  size: auto;
-}
-
-.image-container {
-  min-width: 420px;
-  min-height: 350px;
-  max-width: 100%;
-  max-height: 100%;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  box-sizing: inherit;
-}
-
-.image-container:before {
-  background-color: black;
-}
-
-.inner-text-image {
-  top: 50%;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 130px;
-}
-
-.image-text-property {
-  color: rgb(255, 255, 255);
-  font-size: 40px;
-  font-family: headerFont;
-}
-
 /*Footer Structure*/
 
 .page-footer-color {
@@ -173,12 +119,16 @@ a:hover text {
 
 .footer-text {
   color: rgba(70, 73, 72, 100);
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 2px;
 }
 
 .footer-copyright-text {
   color: rgba(70, 73, 72, 100);
   background-color: rgba(252, 229, 155, 100);
   font-size: 12px;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 2px;
 }
 
 .footer-copyright {
@@ -188,17 +138,17 @@ a:hover text {
   padding: 12px;
 }
 
+.validate {
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
 .news-button {
   margin-top: 10px;
 }
 
 .container-impressum {
   width: 100%;
-}
-
-.row-no-gutters {
-  margin-right: 0;
-  margin-left: 0;
 }
 
 .nav-wrapper.scrolled {
@@ -243,7 +193,7 @@ header:before {
   position: relative;
   padding: 1em;
   height: 100vh;
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   left: 0;
@@ -268,16 +218,20 @@ header:before {
 
 header h1 {
   color: rgba(95, 151, 50, 1);
-  font-size: 42px;
+  font-size: 52px;
   text-align: center;
-  padding-top: 35vh;
-  font-family: headerFont;
-  font-weight: bold;
+  padding-top: 40vh;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  margin-top: 15px;
+  letter-spacing: 5px;
 }
 header p {
   text-align: center;
   font-size: 2em;
   font-weight: 200;
+  padding-bottom: 25px;
+  letter-spacing: 5px;
 }
 
 #about {
@@ -311,24 +265,25 @@ header p {
 }
 
 .background--spring {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/da/Precincts_of_Watari-jinja_shrine_in_Spring_season_2.JPG');
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/da/Precincts_of_Watari-jinja_shrine_in_Spring_season_2.JPG");
 }
 
 .background--summer {
-  background-image: url('https://images.pexels.com/photos/375152/summer-sun-blooming-season-375152.jpeg?cs=srgb&dl=beautiful-bloom-blossom-375152.jpg&fm=jpg');
+  background-image: url("https://images.pexels.com/photos/375152/summer-sun-blooming-season-375152.jpeg?cs=srgb&dl=beautiful-bloom-blossom-375152.jpg&fm=jpg");
 }
 
 .background--fall {
-  background-image: url('https://images.pexels.com/photos/33060/road-forest-season-autumn.jpg?cs=srgb&dl=autumn-fall-forest-33060.jpg&fm=jpg');
+  background-image: url("https://images.pexels.com/photos/33060/road-forest-season-autumn.jpg?cs=srgb&dl=autumn-fall-forest-33060.jpg&fm=jpg");
 }
 
 .background--winter {
-  background-image: url('https://images.pexels.com/photos/235595/pexels-photo-235595.jpeg?cs=srgb&dl=branches-cold-season-235595.jpg&fm=jpg');
+  background-image: url("https://images.pexels.com/photos/235595/pexels-photo-235595.jpeg?cs=srgb&dl=branches-cold-season-235595.jpg&fm=jpg");
 }
 
 .title {
   position: absolute;
   margin: 0;
+  padding-top: 15px;
   top: calc(50% - 50px);
   width: 100%;
   left: 0;
@@ -338,7 +293,7 @@ header p {
   letter-spacing: 5px;
   height: 100px;
   color: white;
-  font-size: 5rem;
+  font-size: 4rem;
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -361,7 +316,7 @@ header p {
 }
 .season-desc .season--title {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 5px;
   text-transform: uppercase;
   margin: 20px 0;
@@ -400,6 +355,8 @@ header p {
   grid-template-rows: repeat(1, calc(50vh - 13.33px));
   color: #fff;
   font-size: 3vw;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 5px;
   text-align: center;
 }
 
@@ -422,7 +379,7 @@ header p {
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .gallery div:before {
-  content: '';
+  content: "";
   position: absolute;
   transition: 0.4s ease;
   top: 0;
