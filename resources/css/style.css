@@ -307,22 +307,6 @@ header p {
   transform: translateZ(-1px) scale(2);
 }
 
-.background--spring {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/da/Precincts_of_Watari-jinja_shrine_in_Spring_season_2.JPG');
-}
-
-.background--summer {
-  background-image: url('https://images.pexels.com/photos/375152/summer-sun-blooming-season-375152.jpeg?cs=srgb&dl=beautiful-bloom-blossom-375152.jpg&fm=jpg');
-}
-
-.background--fall {
-  background-image: url('https://images.pexels.com/photos/33060/road-forest-season-autumn.jpg?cs=srgb&dl=autumn-fall-forest-33060.jpg&fm=jpg');
-}
-
-.background--winter {
-  background-image: url('https://images.pexels.com/photos/235595/pexels-photo-235595.jpeg?cs=srgb&dl=branches-cold-season-235595.jpg&fm=jpg');
-}
-
 .title {
   position: absolute;
   margin: 0;
