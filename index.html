@@ -72,7 +72,13 @@
           });
         </script>
         <script>
+          $( window ).on( "load", function(){
+            $(".fade").css("transition", "4s");
+            $(".fade").css("opacity", 1);
+          })
+
           $(window).scroll(function(){
+            $(".fade").css("transition", "1s");
             $(".fade").css("opacity", 1 - $(window).scrollTop() / 500);
           });
         </script>

@@ -9,7 +9,13 @@
 /* Title-Home */
 
 .fade {
-  opacity: 1;
+  opacity: 0;
+  transition: 3s opacity;
+}
+
+fade.fade-out {
+  opacity: 0;
+  transition: none;
 }
 
 .home-image {
@@ -151,7 +157,7 @@ header:before {
   position: relative;
   padding: 1em;
   height: 100vh;
-  content: " ";
+  content: ' ';
   display: block;
   position: absolute;
   left: 0;
@@ -287,19 +293,19 @@ header p {
 }
 
 .background--spring {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/da/Precincts_of_Watari-jinja_shrine_in_Spring_season_2.JPG");
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/da/Precincts_of_Watari-jinja_shrine_in_Spring_season_2.JPG');
 }
 
 .background--summer {
-  background-image: url("https://images.pexels.com/photos/375152/summer-sun-blooming-season-375152.jpeg?cs=srgb&dl=beautiful-bloom-blossom-375152.jpg&fm=jpg");
+  background-image: url('https://images.pexels.com/photos/375152/summer-sun-blooming-season-375152.jpeg?cs=srgb&dl=beautiful-bloom-blossom-375152.jpg&fm=jpg');
 }
 
 .background--fall {
-  background-image: url("https://images.pexels.com/photos/33060/road-forest-season-autumn.jpg?cs=srgb&dl=autumn-fall-forest-33060.jpg&fm=jpg");
+  background-image: url('https://images.pexels.com/photos/33060/road-forest-season-autumn.jpg?cs=srgb&dl=autumn-fall-forest-33060.jpg&fm=jpg');
 }
 
 .background--winter {
-  background-image: url("https://images.pexels.com/photos/235595/pexels-photo-235595.jpeg?cs=srgb&dl=branches-cold-season-235595.jpg&fm=jpg");
+  background-image: url('https://images.pexels.com/photos/235595/pexels-photo-235595.jpeg?cs=srgb&dl=branches-cold-season-235595.jpg&fm=jpg');
 }
 
 .title {
@@ -401,7 +407,7 @@ header p {
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .gallery div:before {
-  content: "";
+  content: '';
   position: absolute;
   transition: 0.4s ease;
   top: 0;
