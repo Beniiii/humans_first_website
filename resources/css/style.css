@@ -163,7 +163,7 @@ header:before {
   position: relative;
   padding: 1em;
   height: 100vh;
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   left: 0;
@@ -320,7 +320,7 @@ header p {
   letter-spacing: 5px;
   height: 100px;
   color: white;
-  font-size: 4rem;
+  font-size: 3.3rem;
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -332,7 +332,7 @@ header p {
   font-size: 1.1rem;
   letter-spacing: 2px;
   line-height: 2em;
-  padding: 3rem;
+  padding: 9rem;
   height: 100vh;
   margin: 0;
   display: flex;
@@ -405,7 +405,7 @@ header p {
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .gallery div:before {
-  content: '';
+  content: "";
   position: absolute;
   transition: 0.4s ease;
   top: 0;
