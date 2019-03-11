@@ -350,7 +350,8 @@ header p {
 }
 .season-desc .season--about {
   margin-top: 50px;
-  padding: 0;
+  padding: 2em;
+  text-align: center;
 }
 
 @media (max-width: 998px) and (orientation: portrait) {
@@ -548,4 +549,12 @@ header p {
 .nav-wrapper.scrolled {
   background-color: #fff !important;
   transition: background-color 200ms linear;
+}
+
+p {
+  text-align: center;
+}
+
+.contact-form {
+  margin: 2rem;
 }
