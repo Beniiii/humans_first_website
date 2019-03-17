@@ -551,10 +551,6 @@ header p {
   transition: background-color 200ms linear;
 }
 
-p {
-  text-align: center;
-}
-
 .contact-form {
   margin: 2rem;
 }
