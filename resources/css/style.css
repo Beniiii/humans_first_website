@@ -512,6 +512,12 @@ header p {
   background-color: rgba(254, 245, 215, 100);
 }
 
+.footer-text-title {
+  color: rgba(70, 73, 72, 100);
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
 .footer-text {
   color: rgba(70, 73, 72, 100);
   font-family: Helvetica, sans-serif;
@@ -553,4 +559,14 @@ header p {
 
 .contact-form {
   margin: 2rem;
+}
+
+.title-team {
+  text-align: center;
+  font-size: 2.3rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: rgba(70, 73, 72, 1);
+  text-align: center;
 }
