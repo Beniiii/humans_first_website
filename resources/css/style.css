@@ -99,6 +99,10 @@ a:hover text {
   border-bottom: 1px solid currentColor;
 }
 
+.hf-tab text.active {
+  color: rgba(95, 151, 50, 1);
+}
+
 .nav-vl {
   margin-top: 22px;
   border-left: 1px solid;
@@ -291,7 +295,6 @@ header p {
 }
 
 /* Parallax Structure */
-
 .parallax-wrapper {
   perspective: 1px;
   transform-style: preserve-3d;
@@ -325,9 +328,9 @@ header p {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
-  height: 100px;
+  height: 90px;
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -350,7 +353,7 @@ header p {
 }
 .season-desc .season--title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   letter-spacing: 5px;
   text-transform: uppercase;
   margin: 20px 0;
@@ -545,7 +548,6 @@ header p {
   font-size: 11px;
   font-family: Helvetica, sans-serif;
   letter-spacing: 2px;
-  padding: 0.5rem;
 }
 
 .footer-copyright {
