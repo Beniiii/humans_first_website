@@ -8,6 +8,11 @@
 
 /* Title-Home */
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .fade {
   opacity: 0;
   transition: 3s opacity;
@@ -382,7 +387,7 @@ header p {
   grid-template-columns: repeat(3, calc(33.33vw - 0.33px));
   grid-template-rows: repeat(1, calc(50vh - 13.33px));
   color: #fff;
-  font-size: 3vw;
+  font-size: 2.2em;
   font-family: Helvetica, sans-serif;
   letter-spacing: 5px;
   text-align: center;
@@ -510,6 +515,10 @@ header p {
 
 /*Footer Structure*/
 
+.section-footer {
+  padding: 0.6rem;
+}
+
 .page-footer-color {
   background-color: rgba(254, 245, 215, 100);
 }
@@ -518,20 +527,23 @@ header p {
   color: rgba(70, 73, 72, 100);
   font-family: Helvetica, sans-serif;
   letter-spacing: 2px;
+  font-size: 22px;
 }
 
 .footer-text {
   color: rgba(70, 73, 72, 100);
   font-family: Helvetica, sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  font-size: 13px;
 }
 
 .footer-copyright-text {
   color: rgba(70, 73, 72, 100);
   background-color: rgba(252, 229, 155, 100);
-  font-size: 12px;
+  font-size: 11px;
   font-family: Helvetica, sans-serif;
   letter-spacing: 2px;
+  padding: 0.5rem;
 }
 
 .footer-copyright {
@@ -545,6 +557,8 @@ header p {
   font-family: Helvetica, sans-serif;
   letter-spacing: 2px;
 }
+
+/*Contact Structure*/
 
 .news-button {
   margin-top: 10px;
@@ -575,10 +589,21 @@ header p {
 .title-contactform {
   color: rgba(70, 73, 72, 1);
   font-size: 1.7rem;
+  letter-spacing: 2px;
 }
 
 /*Shop Structure*/
 
 .section-shop {
   padding: 0.8rem;
+}
+
+.card-content-shop {
+  letter-spacing: 1px;
+  color: rgba(70, 73, 72, 1);
+}
+
+.card-title {
+  letter-spacing: 2px;
+  color: rgba(70, 73, 72, 1);
 }
