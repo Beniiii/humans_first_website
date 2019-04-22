@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="html">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1.0"
-    />
-    <title>Shop</title>
-
-    <!-- CSS  -->
-    <link
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1.0"
+        />
+        <title>Humans First - Pranic Healing</title>
+    
+        <!-- CSS  -->
+        <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
@@ -25,11 +25,18 @@
           rel="stylesheet"
           media="screen,projection"
         />
+        <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+        />
+    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://codepen.io/j_holtslander/pen/pLNzQb.js"></script>
         <script src="https://codepen.io/j_holtslander/pen/KQrWVy.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
         <script src="/resources/js/javascript.js"></script>
         <script>
             $(document).ready(function() {
@@ -81,11 +88,20 @@
             $(".fade").css("opacity", 1 - $(window).scrollTop() / 500);
           });
         </script>
-  </head>
+        <script>
+          $(document).ready(function(){
+            $(".dropdown-trigger").dropdown();
+          });
+        </script>
+      </head>
+  <body class="body-color"> 
+    <div>
+      <div class="selection">
+      
+    </div>
+  </div>
 
-  <body class="body-color">
-
-      <!-- NavBar Neu -->
+<!-- NavBar Neu -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="nav-wrapper">
       <div class="row">
@@ -106,6 +122,9 @@
                 <a class="hf-tab" href="team.html"><text>Über Uns</text></a>
               </li>
               <li>
+                  <a class="hf-tab" href="blog.html"><text>Blog</text></a>
+                </li>
+              <li>
                 <a class="hf-tab" href="contact.html"><text>Kontakt</text></a>
               </li>
               <li><div class="nav-vl" target="_blank"></div></li>
@@ -116,7 +135,12 @@
               </li>
               <li>
                   <li><a class="hf-tab" href="#"><i class="material-icons" target="_blank">shopping_cart</i></a></li>
-                </li>
+              </li>
+              <!-- Dropdown Structure -->
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">EN</a></li>
+                <li><a href="#!">DE</a></li>
+              </ul>
             </ul>
         </div>
       </div>
@@ -133,9 +157,14 @@
         <a href="team.html">Über Uns</a>
       </li>
       <li>
+          <a href="blog.html">Blog</a>
+        </li>
+      <li>
         <a href="contact.html">Kontakt</a>
       </li>
     </ul>
+
+    <!-- Content Structure -->
     
     <div class="parallax-wrapper">
       <section class="season-desc">
@@ -212,7 +241,7 @@
             <li><a class="footer-text" >Sibylle Mundwiler / CEO</a></li>
             <li><a class="footer-text" >Baumgartenweg 13</a></li>
             <li><a class="footer-text" >CH-4104 Oberwil</a></li>
-            <li><a class="footer-text" >+41 79 321 6776</a></li>
+            <li><a class="footer-text" href="tel:793216776" >+41 79 321 67 76</a></li>
             <li><a class="footer-text" href="mailto:office@sackstarkconsulting.ch">office@sackstarkconsulting.ch</a></li>
           </ul>
         </div>

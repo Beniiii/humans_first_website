@@ -25,12 +25,18 @@
           rel="stylesheet"
           media="screen,projection"
         />
+        <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+        />
     
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://codepen.io/j_holtslander/pen/pLNzQb.js"></script>
         <script src="https://codepen.io/j_holtslander/pen/KQrWVy.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
         <script src="/resources/js/javascript.js"></script>
         <script>
             $(document).ready(function() {
@@ -82,6 +88,11 @@
             $(".fade").css("opacity", 1 - $(window).scrollTop() / 500);
           });
         </script>
+        <script>
+          $(document).ready(function(){
+            $(".dropdown-trigger").dropdown();
+          });
+        </script>
       </head>
   <body class="body-color"> 
     <div>
@@ -89,6 +100,7 @@
       
     </div>
   </div>
+
 <!-- NavBar Neu -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="nav-wrapper">
@@ -110,17 +122,25 @@
                 <a class="hf-tab" href="team.html"><text>Über Uns</text></a>
               </li>
               <li>
+                  <a class="hf-tab" href="blog.html"><text>Blog</text></a>
+                </li>
+              <li>
                 <a class="hf-tab" href="contact.html"><text>Kontakt</text></a>
               </li>
               <li><div class="nav-vl" target="_blank"></div></li>
               <li>
                 <a class="dropdown-trigger" class="nav-dropdown" href="#!" data-target="dropdown1"
-                  ><text>DE</text><i class="material-icons right" class="dropdown-arrow" width="340" height="47">arrow_drop_down</i></a
+                  ><text>DE</text><i class="material-icons right" class="dropdown-arrow" width="320" height="44">arrow_drop_down</i></a
                 >
               </li>
               <li>
                   <li><a class="hf-tab" href="#"><i class="material-icons" target="_blank">shopping_cart</i></a></li>
-                </li>
+              </li>
+              <!-- Dropdown Structure -->
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">EN</a></li>
+                <li><a href="#!">DE</a></li>
+              </ul>
             </ul>
         </div>
       </div>
@@ -137,6 +157,9 @@
         <a href="team.html">Über Uns</a>
       </li>
       <li>
+          <a href="blog.html">Blog</a>
+        </li>
+      <li>
         <a href="contact.html">Kontakt</a>
       </li>
     </ul>
@@ -150,6 +173,7 @@
 
   <div id="nav-bg"></div>
 
+  <!-- Content Structure -->
 
     <!--   Parrallex Structure   -->
     <div class="parallax-wrapper">
@@ -251,7 +275,7 @@
               <li><a class="footer-text" >Sibylle Mundwiler / CEO</a></li>
               <li><a class="footer-text" >Baumgartenweg 13</a></li>
               <li><a class="footer-text" >CH-4104 Oberwil</a></li>
-              <li><a class="footer-text" >+41 79 321 6776</a></li>
+              <li><a class="footer-text" href="tel:793216776" >+41 79 321 67 76</a></li>
               <li><a class="footer-text" href="mailto:office@sackstarkconsulting.ch">office@sackstarkconsulting.ch</a></li>
             </ul>
           </div>

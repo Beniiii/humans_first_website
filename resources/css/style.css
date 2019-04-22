@@ -79,7 +79,7 @@ fade.fade-out {
   color: rgba(70, 73, 72, 1);
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 18px;
+  font-size: 16px;
   -webkit-transition: color 0.28s ease, background-color 0.28s ease;
   transition: color 0.28s ease, background-color 0.28s ease;
   cursor: pointer;
@@ -113,7 +113,7 @@ a:hover text {
   -webkit-transition: color 0.28s ease, background-color 0.28s ease;
   transition: color 0.28s ease, background-color 0.28s ease;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 2px;
 }
 
@@ -129,6 +129,7 @@ a:hover text {
 
 nav {
   z-index: 3;
+  color: rgba(70, 73, 72, 1);
 }
 header {
   z-index: 2;
@@ -143,10 +144,11 @@ body {
 nav {
   position: fixed;
   top: 0;
+  color: rgba(70, 73, 72, 1);
 }
 
 nav a {
-  color: rgba(70, 73, 72, 1);
+  color: rgba(70, 73, 72, 1) !important;
 }
 
 header {
@@ -232,7 +234,7 @@ header p {
   border: 1px solid rgba(255, 253, 248, 100);
 }
 .navbar-default .navbar-nav > li > a {
-  color: white;
+  color: rgba(70, 73, 72, 1);
   margin: 10px 5px 5px 5px;
 }
 .navbar-default .navbar-nav > li > a:hover,
@@ -590,6 +592,17 @@ header p {
   color: rgba(70, 73, 72, 1);
   font-size: 1.7rem;
   letter-spacing: 2px;
+}
+
+.contact-icons {
+  color: rgba(70, 73, 72, 1);
+  overflow: hidden;
+  font-size: 16px;
+  -webkit-transition: color 0.28s ease, background-color 0.28s ease;
+  transition: color 0.28s ease, background-color 0.28s ease;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
 }
 
 /*Shop Structure*/
