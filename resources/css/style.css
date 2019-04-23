@@ -622,3 +622,63 @@ header p {
   letter-spacing: 2px;
   color: rgba(70, 73, 72, 1);
 }
+
+/*Blog Structure*/
+
+.blogShort {
+  border-bottom: 1px solid #ddd;
+}
+.add {
+  padding: 10%;
+  height: 300px;
+}
+
+.btn-blog {
+  color: #ffffff;
+  background-color: #37d980;
+  border-color: #37d980;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+.btn-blog:hover,
+.btn-blog:focus,
+.btn-blog:active,
+.btn-blog.active,
+.open .dropdown-toggle.btn-blog {
+  color: white;
+  background-color: #34ca78;
+  border-color: #34ca78;
+}
+
+.margin10 {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.desc-wrapper {
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.blog--title {
+  text-align: left;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: rgba(70, 73, 72, 1);
+}
+
+.blog-date {
+  text-align: left;
+  letter-spacing: 2px;
+  color: rgba(70, 73, 72, 1);
+}
+
+.blog--about {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: left;
+  letter-spacing: 2px;
+  color: rgba(70, 73, 72, 1);
+}
