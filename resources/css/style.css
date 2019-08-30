@@ -616,11 +616,13 @@ header p {
 .card-content-shop {
   letter-spacing: 1px;
   color: rgba(70, 73, 72, 1);
+  font-size: 14px;
 }
 
 .card-title {
   letter-spacing: 2px;
   color: rgba(70, 73, 72, 1);
+  margin-bottom: -5px;
 }
 
 /*Blog Structure*/
@@ -681,4 +683,23 @@ header p {
   text-align: left;
   letter-spacing: 2px;
   color: rgba(70, 73, 72, 1);
+}
+
+/*Team*/
+
+.team-text {
+  color: rgba(70, 73, 72, 100);
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
+
+.team-text-indien {
+  color: rgba(70, 73, 72, 100);
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-size: 16.5px;
+  line-height: 2em;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
