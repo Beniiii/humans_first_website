@@ -346,9 +346,10 @@ header p {
   font-size: 1.1rem;
   letter-spacing: 2px;
   line-height: 2em;
-  padding: 9rem;
+  padding: 7.5rem;
   height: 100vh;
   margin: 0;
+  margin-bottom: 5px;
   display: flex;
 }
 .season-desc .desc-wrapper {
@@ -357,31 +358,51 @@ header p {
 }
 .season-desc .season--title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   letter-spacing: 5px;
   text-transform: uppercase;
   margin: 20px 0;
 }
 .season-desc .season--about {
   margin-top: 50px;
-  padding: 2em;
+  padding: 1.5em;
   text-align: center;
 }
 
-@media (max-width: 998px) and (orientation: portrait) {
+@media (min-width: 500px) and (max-width: 1200px) {
   .season-desc {
-    padding: 1.5rem 20px;
-    font-size: 1rem;
+    padding: 3.5rem;
+    font-size: 0.9rem;
     height: unset;
-    min-height: 100vh;
+    min-height: 60vh;
   }
   .season-desc .season-title {
-    font-size: 2.5rem;
-    margin: 20px 0;
+    font-size: 1.3rem;
+    margin: 10px;
+  }
+  .season-desc .season-about {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+  .season-desc {
+    padding: 3.5rem;
+    font-size: 0.9rem;
+    height: unset;
+    min-height: 50vh;
+  }
+  .season-desc .season-title {
+    font-size: 1.2rem;
+    margin: 20px;
     letter-spacing: unset;
   }
   .season-desc .season-about {
     margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
   }
 }
 
