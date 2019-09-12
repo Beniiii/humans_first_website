@@ -334,7 +334,7 @@ header p {
   letter-spacing: 5px;
   height: 90px;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.35rem;
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -358,7 +358,7 @@ header p {
 }
 .season-desc .season--title {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   letter-spacing: 5px;
   text-transform: uppercase;
   margin: 20px 0;
@@ -389,7 +389,7 @@ header p {
 
 @media (max-width: 500px) and (orientation: portrait) {
   .season-desc {
-    padding: 3.5rem;
+    padding: 3rem;
     font-size: 0.9rem;
     height: unset;
     min-height: 50vh;
@@ -727,4 +727,16 @@ header p {
   line-height: 2em;
   margin-top: 50px;
   margin-bottom: 50px;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .team-text-indien {
+    font-size: 0.9rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
