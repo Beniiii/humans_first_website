@@ -352,6 +352,7 @@ header p {
   margin-bottom: 5px;
   display: flex;
 }
+
 .season-desc .desc-wrapper {
   margin: auto;
   box-sizing: border-box;
@@ -739,4 +740,51 @@ header p {
     padding-right: 2.5rem;
     padding-bottom: 1.5rem;
   }
+}
+
+/*Dataprotection*/
+
+.dataprotection-title {
+  font-size: 0.7rem;
+  color: rgba(70, 73, 72, 1);
+  letter-spacing: 2px;
+}
+
+.season-desc-dataprotection {
+  position: relative;
+  background: rgba(255, 253, 248, 100);
+  color: rgba(70, 73, 72, 1);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  line-height: 2em;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+  padding-top: 7.5rem;
+  display: flex;
+}
+
+.text-dataprotection {
+  color: rgba(70, 73, 72, 100);
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-size: 14px;
+  line-height: 2em;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+  padding-bottom: 2rem;
+}
+
+.hf-tab-footer {
+  color: rgba(70, 73, 72, 1);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 11px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.hf-tab-footer:hover {
+  background-color: rgba(238, 110, 115, 0);
 }
