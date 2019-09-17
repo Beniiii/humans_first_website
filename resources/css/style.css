@@ -733,7 +733,16 @@ header p {
   padding-bottom: 2rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media (min-width: 500px) and (max-width: 1200px) {
+  .team-text-indien {
+    font-size: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .team-text-indien {
     font-size: 0.9rem;
     padding-left: 2.5rem;
