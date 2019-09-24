@@ -11,6 +11,11 @@
 html,
 body {
   overflow-x: hidden;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.card.large {
+  height: 600px !important;
 }
 
 ::-webkit-scrollbar {
@@ -792,7 +797,7 @@ header p {
   color: rgba(70, 73, 72, 100);
   font-family: Helvetica, sans-serif;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 2em;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -816,7 +821,7 @@ header p {
 
 @media (min-width: 500px) and (max-width: 900px) {
   .text-dataprotection {
-    font-size: 1rem;
+    font-size: 13px;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
     padding-bottom: 1rem;
