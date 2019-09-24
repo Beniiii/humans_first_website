@@ -373,7 +373,7 @@ header p {
 @media (min-width: 500px) and (max-width: 1200px) {
   .season-desc {
     padding: 3.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     height: unset;
     min-height: 60vh;
   }
@@ -384,14 +384,14 @@ header p {
   .season-desc .season-about {
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 500px) and (orientation: portrait) {
   .season-desc {
     padding: 0.4rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     height: unset;
     min-height: 50vh;
   }
@@ -422,7 +422,7 @@ header p {
   grid-template-columns: repeat(3, calc(33.33vw - 0.33px));
   grid-template-rows: repeat(1, calc(50vh - 13.33px));
   color: #fff;
-  font-size: 2.2em;
+  font-size: 2.1em;
   font-family: Helvetica, sans-serif;
   letter-spacing: 5px;
   text-align: center;
@@ -737,12 +737,16 @@ header p {
   padding-bottom: 2rem;
 }
 
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 500px) and (max-width: 1100px) {
   .team-text-indien {
     font-size: 1rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .team-text {
+    font-size: 12px;
   }
 }
 
@@ -755,7 +759,7 @@ header p {
   }
 
   .title-team {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .team-text {
@@ -778,8 +782,8 @@ header p {
   font-size: 1.1rem;
   letter-spacing: 2px;
   line-height: 2em;
-  padding-left: 7.5rem;
-  padding-right: 7.5rem;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
   padding-top: 7.5rem;
   display: flex;
 }
@@ -792,8 +796,8 @@ header p {
   line-height: 2em;
   margin-top: 50px;
   margin-bottom: 50px;
-  padding-left: 7.5rem;
-  padding-right: 7.5rem;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
   padding-bottom: 2rem;
 }
 
@@ -810,20 +814,26 @@ header p {
   background-color: rgba(238, 110, 115, 0);
 }
 
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 500px) and (max-width: 900px) {
   .text-dataprotection {
     font-size: 1rem;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
     padding-bottom: 1rem;
+  }
+
+  .season-desc-dataprotection {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    padding-top: 7.5rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .text-dataprotection {
-    font-size: 1rem;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
+    font-size: 0.9rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
     padding-bottom: 0.5rem;
   }
 }
