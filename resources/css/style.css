@@ -567,14 +567,14 @@ header p {
   color: rgba(70, 73, 72, 100);
   font-family: Helvetica, sans-serif;
   letter-spacing: 2px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .footer-text {
   color: rgba(70, 73, 72, 100);
   font-family: Helvetica, sans-serif;
-  letter-spacing: 1.5px;
-  font-size: 13px;
+  letter-spacing: 1.3px;
+  font-size: 12px;
 }
 
 .footer-copyright-text {
