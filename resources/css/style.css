@@ -390,8 +390,8 @@ header p {
 
 @media (max-width: 500px) and (orientation: portrait) {
   .season-desc {
-    padding: 3rem;
-    font-size: 0.9rem;
+    padding: 0.4rem;
+    font-size: 1rem;
     height: unset;
     min-height: 50vh;
   }
@@ -404,6 +404,10 @@ header p {
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 0.9rem;
+  }
+
+  .season--title {
+    padding-top: 4.5rem;
   }
 }
 
@@ -744,10 +748,18 @@ header p {
 
 @media only screen and (max-width: 500px) {
   .team-text-indien {
-    font-size: 0.9rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .title-team {
+    font-size: 1.7rem;
+  }
+
+  .team-text {
+    font-size: 12px;
   }
 }
 
@@ -796,4 +808,33 @@ header p {
 
 .hf-tab-footer:hover {
   background-color: rgba(238, 110, 115, 0);
+}
+
+@media (min-width: 500px) and (max-width: 1200px) {
+  .text-dataprotection {
+    font-size: 1rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .text-dataprotection {
+    font-size: 1rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .season-desc-dataprotection {
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    line-height: 2em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4.5rem;
+  }
 }
