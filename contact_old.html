@@ -95,7 +95,7 @@
         </script>
       </head>
   <body class="body-color"> 
-    <div>
+    <div style="background-image: url('resources/images/hand_healing_full.jpg'); opacity: 0.0;">
       <div class="selection">
       
     </div>
@@ -116,13 +116,13 @@
           >
           <ul class="right hide-on-med-and-down">
               <li>
-                <a class="hf-tab" href="shop.html"><text>Abos & Pricing</text></a>
+                <a class="hf-tab" href="shop.html"><text>Abos & Preise</text></a>
               </li>
               <li>
-                <a class="hf-tab" href="team.html"><text>About us</text></a>
+                <a class="hf-tab" href="team.html"><text>Über Uns</text></a>
               </li>
               <li>
-                <a class="hf-tab" href="contact.html"><text text class="active" >Contact</text></a>
+                <a class="hf-tab" href="contact.html"><text text class="active" >Kontakt</text></a>
               </li>
               <li><div class="nav-vl" target="_blank"></div></li>
               <li>
@@ -130,10 +130,11 @@
                   ><text>DE</text><i class="material-icons right" class="dropdown-arrow" width="340" height="47">arrow_drop_down</i></a
                 >
               </li>
+              
               <!-- Dropdown Structure -->
               <ul id="dropdown1" class="dropdown-content">
-                <li><a href="#!">EN</a></li>
-                <li><a href="#!">DE</a></li>
+                <li><a href="contact.html">EN</a></li>
+                <li><a href="contact.html">DE</a></li>
               </ul>
             </ul>
         </div>
@@ -145,46 +146,47 @@
         <a href="index.html">Home</a>
       </li>
       <li>
-        <a href="shop.html">Abos & Pricing</a>
+        <a href="shop.html">Abos & Preise</a>
       </li>
       <li>
-        <a href="team.html">About us</a>
+        <a href="team.html">Über Uns</a>
       </li>
       <li>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html">Kontakt</a>
       </li>
     </ul>
 
  <!-- Content Structure -->
 
-    <div>
+    
       <section class="season-desc">
         <div class="desc-wrapper">
-          <h3 class="season--title">Contact us!</h3>
+          <h3 class="season--title">Kontaktieren Sie uns</h3>
           <p class="season--about">
-              The team of Humans First is available for further questions and additional information.
-              Below you will find the contact form where you can send us your request. As soon as possible we will make contact.
+              Für Fragen und weitere Informationen steht Ihnen das Team gerne zur Verfügung. 
+              Wenn Sie das folgende Kontaktformular ausfüllen, nehmen wir so schnell wie möglich Kontakt zu Ihnen auf. 
           </p>
+          <p style="text-align: center;" ><i class="material-icons" target="_blank" style="font-size: 3.5rem;">arrow_downward</i></p>
           </section>
-    </div>
+    
 
     <div class="container" margin-bottom: 50pt;>
-      <form class="col s12">
+      <form class="col s12" name="contact" method="post" action="send_form_email.php">
         <div class="row">
             <div class="input-field col s6">
                 <h5 class="title-contactform">
-                    Contact form 
+                    Kontaktformular 
                 </h5>
               </div>
         </div>
         <div class="row">
           <div class="input-field col s6">
             <input id="first_name" type="text" class="validate">
-            <label for="first_name">Surname</label>
+            <label for="first_name">Vorname</label>
           </div>
           <div class="input-field col s6">
             <input id="last_name" type="text" class="validate">
-            <label for="last_name">Name</label>
+            <label for="last_name">Nachname</label>
           </div>
         </div>
         <div class="row">
@@ -196,10 +198,10 @@
         <div class="row">
           <div class="input-field col s12">
             <textarea id="textarea1" class="materialize-textarea"></textarea>
-            <label for="textarea1">Message</label>
+            <label for="textarea1">Nachricht</label>
           </div>
         </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Send
+        <button class="btn waves-effect waves-light" type="submit" name="action">Senden
           <i class="material-icons right">send</i>
         </button>
       </form>
@@ -208,13 +210,13 @@
       <row>
         <col> 
           <div> 
-            <a class="contact-icons" style="font-weight: 600;" >Phone number: </a>
+            <a class="contact-icons" style="font-weight: 600;" >Telefonnummer: </a>
             <a class="contact-icons" href="tel:793216776">+41 79 321 67 76</a>
           </div>
           </br>
           <div>
               <a class="contact-icons" style="font-weight: 600;">E-Mail: </a> 
-              <a class="contact-icons" href="mailto:office@sackstarkconsulting.ch">office@sackstarkconsulting.ch</a>
+              <a class="contact-icons" href="mailto:sibylle.mundwiler@humans-first.ch">sibylle.mundwiler@humans-first.ch</a>
             </div>
         </col>
       </row>
@@ -225,51 +227,56 @@
 
     <!-- Footer Structure -->
     <footer class="page-footer-color">
-        <div class="footer-border">
-          <section class="section-footer">
-          <div class="row" style="margin-bottom:12px;">
-            <div class="col l4 s12">
-              <h5 class="footer-text-title">Contact</h5>
-              <ul>
-                <li><a class="footer-text" >Humans First</a></li>
-                <li><a class="footer-text" >Sibylle Mundwiler / CEO</a></li>
-                <li><a class="footer-text" >Baumgartenweg 13</a></li>
-                <li><a class="footer-text" >CH-4104 Oberwil</a></li>
-                <li><a class="footer-text" href="tel:793216776" >+41 79 321 67 76</a></li>
-                <li><a class="footer-text" href="mailto:office@sackstarkconsulting.ch">office@sackstarkconsulting.ch</a></li>
-              </ul>
-            </div>
-            <div class="col l4 s12">
-              <h5 class="footer-text-title">Theme</h5>
-              <ul> 
-                <li><a class="footer-text" >Chronic pain</a></li>
-                <li><a class="footer-text" >Autoimmune disease</a></li>
-                <li><a class="footer-text" >Cancer</a></li>
-                <li><a class="footer-text" >Anxiety and panic attacks</a></li>
-                <li><a class="footer-text" >Acute problemes</a></li>
-                <li><a class="footer-text" >Burnout / stress</a></li>
-                <li><a class="footer-text" >Relationsship problems</a></li>
-              </ul>
-            </div>
-            <div class="col l4 s12">
-              <h5 class="footer-text-title">Newsletter</h5>
-              <ul>
-              <li><a class="footer-text">
-                This is the news-letter. 
-                After registration you will receive a mail with information about "Pranic Healing" once a month.
-              </a></lil>
-              <li><input placeholder="E-Mail adress" class="validate"></li>
-              <li class="news-button"><a href="shop.html" class="waves-effect waves-light btn">Submit</a></li>
-              </ul>
-            </div>
+      <div class="footer-border">
+        <section class="section-footer">
+        <div class="row" style="margin-bottom:-5px;">
+          <div class="col l4 s12">
+            <h5 class="footer-text-title">Kontakt</h5>
+            <ul>
+              <li><a class="footer-text" >Humans First</a></li>
+              <li><a class="footer-text" >Sibylle Mundwiler / CEO</a></li>
+              <li><a class="footer-text" >Baumgartenweg 13</a></li>
+              <li><a class="footer-text" >CH-4104 Oberwil</a></li>
+              <li><a class="footer-text" href="tel:793216776" >+41 79 321 67 76</a></li>
+              <li><a class="footer-text" href="mailto:sibylle.mundwiler@humans-first.ch">sibylle.mundwiler@humans-first.ch/a></li>
+            </ul>
+          </div>
+          <div class="col l4 s12">
+            <h5 class="footer-text-title">Themen</h5>
+            <ul> 
+              <li><a class="footer-text" >Krebs und Herzerkrankungen</a></li>
+              <li><a class="footer-text" >Angstzustände/ Phobien </a></li>
+              <li><a class="footer-text" >Autoimmunerkrankungen</a></li>
+              <li><a class="footer-text" >Allergien</a></li>
+              <li><a class="footer-text" ></a></li>
+              <li><a class="footer-text" >Medizinische Notfälle</a></li>
+              <li><a class="footer-text" >Asthma</a></li>
+              <li><a class="footer-text" >Gallen- oder Nierensteine</a></li>
+              <li><a class="footer-text" >Kinderwunsch</a></li>
+            </ul>
+          </div>
+          <div class="col l4 s12">
+            <h5 class="footer-text-title"> Weitere Themen</h5>
+            <ul> 
+              <li><a class="footer-text" >Schilddrüsenunter- /- überfunktion</a></li>
+              <li><a class="footer-text" >Prostata</a></li>
+              <li><a class="footer-text" >Diabetes</a></li>
+              <li><a class="footer-text" >Frozen Shoulder</a></li>
+              <li><a class="footer-text" >Sportverletzungen</a></li>
+              <li><a class="footer-text" >Epilepsie und Parkinson</a></li>
+              <li><a class="footer-text" ></a></li>
+              <li><a class="footer-text" >Multiples Sklerose</a></li>
+              <li><a class="footer-text" >Traumatas und Depression</a></li>
+            </ul>
           </div>
         </div>
+      </div>
   
         <div class="footer-copyright">
           <div class="container-impressum" >
             <div class="col l1 s12">
             <a class="footer-copyright-text">
-              Impressung | Delivery and payment confirmation | Data protection | Cookie policies | Sitemap
+            © humans-first.ch : <a class="hf-tab-footer" href="impressum.html"><text> Impressum</text></a> : <a class="hf-tab-footer" href="dataprotection.html"><text>Datenschutz</text></a>              
             </a>
           </div>
           </div>
