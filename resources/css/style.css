@@ -644,6 +644,12 @@ header p {
   margin-bottom: 20px;
 }
 
+.contact-content {
+  letter-spacing: 1px;
+  color: rgba(70, 73, 72, 1);
+  font-size: 14px;
+}
+
 /*Shop Structure*/
 
 .section-shop {
