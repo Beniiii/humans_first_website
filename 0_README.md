@@ -1,1 +1,3 @@
-# humans_first_website
+# Humans-First Website
+
+-- Implemented by Julia Müller --
